@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "NODE_ENV=production pm2 start index.js --name parkbot-mailer --max-memory-restart 64M"
   },
   "author": "f.riva@sotefin.ch",
   "license": "ISC",
